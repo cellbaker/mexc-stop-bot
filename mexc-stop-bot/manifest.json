@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "MEXC Стоп-бот (БУ / +ROI%) | @cellbaker",
+  "version": "2.1",
+  "description": "Кнопки 'Стоп в БУ' и '+10/15/25% ROI' на фьючерсах MEXC. Сам читает позицию из data-потока биржи. Created by @cellbaker",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.mexc.com/*",
+        "https://mexc.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": false
+    }
+  ]
+}
